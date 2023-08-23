@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gpt-dbase-exp"
+version = "0.1.0"
+description = ""
+authors = ["kriffendy <riffendykennard23@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+sentence-transformers = "^2.2.2"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+pinecone-client = "^2.2.2"
+
+[tool.poetry.scripts]
+start = 'my_package.console:run'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
